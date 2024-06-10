@@ -1,0 +1,81 @@
+[versions]
+agp = "8.4.1"
+androidxActivity = "1.9.0"
+androidx-compose-compiler = "1.5.14"
+androidx-test-ext-junit = "1.1.5"
+compile-sdk = "34"
+compose-bom = "2024.05.00"
+core-ktx = "1.13.1"
+datastore = "1.1.1"
+espresso-core = "3.5.1"
+hilt = "2.51.1"
+hiltViewModel = "1.2.0"
+junit = "4.13.2"
+kotlin = "1.9.24"
+kotlinx-coroutines = "1.8.1"
+kotlinx-date-time = "0.6.0-RC.2"
+ksp = "1.9.24-1.0.20"
+lifecycle-runtime-ktx = "2.8.1"
+min-sdk = "23"
+nav-graph = "2.7.7"
+org-jetbrains-kotlin-android = "1.9.22"
+roomdb = "2.6.1"
+timber = "5.0.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+
+[libraries]
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+activity-compose = { group = "androidx.activity", name = "activity-compose" }
+androidx-datastore = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+androidx-material3-windowSizeClass = { module = "androidx.compose.material3:material3-window-size-class-android" }
+androidx-room-gradle-plugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "roomdb" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+com-android-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
+com-google-devtools-ksp-plugin = { group = "com.google.devtools.ksp", name = "symbol-processing-gradle-plugin", version.ref = "ksp" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+compose-lifecycleRuntime = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-gradle-plugin = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "hilt" }
+hilt-viewmodel = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltViewModel" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinx-coroutines" }
+kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinx-date-time" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+material3 = { group = "androidx.compose.material3", name = "material3" }
+material3-extendedIcons = { group = "androidx.compose.material", name = "material-icons-extended" }
+navGraph = { group = "androidx.navigation", name = "navigation-compose", version.ref = "nav-graph" }
+org-jetbrains-kotlin-android-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "org-jetbrains-kotlin-android" }
+roomdb-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomdb" }
+roomdb-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomdb" }
+roomdb-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomdb" }
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber" }
+ui = { group = "androidx.compose.ui", name = "ui" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+
+[plugins]
+androidx-room = { id = "androidx.room", version.ref = "roomdb" }
+com-android-application = { id = "com.android.application", version.ref = "agp" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+
+# Plugins defined by this project
+androidtemplate-android-application = { id = "android-application-convention", version = "unspecified" }
+androidtemplate-android-library = { id = "android-library-convention", version = "unspecified" }
+androidtemplate-android-compose = { id = "android-compose-convention", version = "unspecified" }
+androidtemplate-hilt = { id = "hilt-convention", version = "unspecified" }
