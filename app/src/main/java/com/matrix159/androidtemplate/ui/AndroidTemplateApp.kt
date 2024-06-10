@@ -1,5 +1,7 @@
 package com.matrix159.androidtemplate.ui
 
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.windowsizeclass.WindowSizeClass
@@ -16,10 +18,11 @@ fun AndroidTemplateApp(
 ) {
   val navController = rememberNavController()
 
-  Surface(modifier = modifier) {
+  Surface(modifier = modifier.fillMaxSize()) {
     NavHost(
       navController = navController,
       startDestination = "start_route",
+      modifier = Modifier.safeDrawingPadding()
     ) {
 
       composable("start_route") {
